@@ -36,6 +36,10 @@ A significant number of institutions lack appropriate computer tools to manage t
 
 * Complete lack or difficulties in accessing archived collections.
 
+### ⌨️️ Development environment
+
+Learn how to set up your local environment, go to our [Developer Guide](./docs/contribute/developer-guide.md).
+
 
 ## 🥰 License
 

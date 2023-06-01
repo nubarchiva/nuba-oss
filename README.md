@@ -1,4 +1,13 @@
-![software-catalog](docs/assets/night-header.png)
+<p align="center">
+  <a href="https://nubarchiva.org" target="_blank">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nubarchiva/nuba-oss/HEAD/docs/assets/dark-header.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nubarchiva/nuba-oss/HEAD/docs/assets/day-header.svg">
+      <img alt="nubarchiva" src="https://raw.githubusercontent.com/nubarchiva/nuba-oss/HEAD/docs/assets/day-header.svg" width="350" height="70" style="max-width: 100%;">
+    </picture>
+  </a>
+</p>
+
 [![Build](https://github.com/nubarchiva/nuba-oss/actions/workflows/maven.yml/badge.svg)](https://github.com/nubarchiva/nuba-oss/actions/workflows/maven.yml)
 [![ASL 2.0](https://img.shields.io/hexpm/l/plug.svg)](https://github.com/nubarchiva/nuba-oss/blob/develop/LICENSE)
 ![Twitter Follow](https://img.shields.io/twitter/follow/nubarchiva?style=social)

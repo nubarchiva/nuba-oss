@@ -1,8 +1,7 @@
 ![software-catalog](docs/assets/night-header.png)
 [![Build](https://github.com/nubarchiva/nuba-oss/actions/workflows/maven.yml/badge.svg)](https://github.com/nubarchiva/nuba-oss/actions/workflows/maven.yml)
 [![ASL 2.0](https://img.shields.io/hexpm/l/plug.svg)](https://github.com/nubarchiva/nuba-oss/blob/develop/LICENSE)
-![Twitter URL](https://img.shields.io/twitter/url?label=Follow%20%40nubarchiva&style=social&url=https%3A%2F%2Ftwitter.com%2Fnubarchiva)
-
+![Twitter Follow](https://img.shields.io/twitter/follow/nubarchiva?style=social)
 
 ## What is nubarchiva?
 Free software for the preservation of collective memory and cultural heritage.

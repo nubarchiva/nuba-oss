@@ -1,9 +1,9 @@
 <p align="center">
   <a href="https://nubarchiva.org" target="_blank">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nubarchiva/nuba-oss/HEAD/docs/assets/dark-header.svg">
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nubarchiva/nuba-oss/HEAD/docs/assets/night-header.svg">
       <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nubarchiva/nuba-oss/HEAD/docs/assets/day-header.svg">
-      <img alt="nubarchiva" src="https://raw.githubusercontent.com/nubarchiva/nuba-oss/HEAD/docs/assets/day-header.svg" width="350" height="70" style="max-width: 100%;">
+      <img alt="nubarchiva" src="https://raw.githubusercontent.com/nubarchiva/nuba-oss/HEAD/docs/assets/day-header.svg">
     </picture>
   </a>
 </p>

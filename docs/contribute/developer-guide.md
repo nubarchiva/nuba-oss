@@ -38,7 +38,7 @@ mvn process-sources
 Run the following command to add license header info:
 
 ```
-mvn generate-sources -Plicense-format
+mvn generate-sources -Pcode-format
 ```
 ### Git workflow basic
 

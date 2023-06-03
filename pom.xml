@@ -44,8 +44,9 @@
     <properties>
         <maven.version>3.5.0</maven.version>
         <java.version>8</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.parameters>false</maven.compiler.parameters>
-        <maven.compiler.release>${java.version}</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
@@ -77,10 +78,6 @@
                     <version>${spotless.version}</version>
                     <configuration>
                         <java>
-                            <palantirJavaFormat>
-                                <style>PALANTIR</style>
-                            </palantirJavaFormat>
-
                             <!-- standard import order -->
                             <importOrder/>
                             <!-- self-explanatory -->
@@ -336,9 +333,31 @@
                 </property>
             </activation>
             <properties>
+                <!-- JDK 11+ compiler -->
+                <maven.compiler.release>${java.version}</maven.compiler.release>
                 <!-- JDK 11 maven spotless plugin -->
                 <spotless.version>2.37.0</spotless.version>
             </properties>
+            <build>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <!-- Source code formatting -->
+                            <groupId>com.diffplug.spotless</groupId>
+                            <artifactId>spotless-maven-plugin</artifactId>
+                            <version>${spotless.version}</version>
+                            <configuration>
+                                <java>
+                                    <!-- PALANTIR engine requires plugin version 2.20.0+ and JDK 11+ -->
+                                    <palantirJavaFormat>
+                                        <style>PALANTIR</style>
+                                    </palantirJavaFormat>
+                                </java>
+                            </configuration>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+            </build>
         </profile>
 
         <profile>

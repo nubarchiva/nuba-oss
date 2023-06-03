@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright © 2023 nubarchiva - https://nubarachiva.org
+    Copyright © 2023 nubarchiva (https://nubarchiva.org)
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -48,7 +48,6 @@
         <maven.compiler.release>${java.version}</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <main.basedir>${project.basedir}</main.basedir>
 
         <!-- JDK 8 Maven spotless plugin compatibility -->
         <spotless.version>2.3.0</spotless.version>
@@ -122,11 +121,15 @@
                     <artifactId>license-maven-plugin</artifactId>
                     <version>4.2</version>
                     <configuration>
+                        <properties>
+                            <year>2023</year>
+                            <owner>nubarchiva</owner>
+                            <email>https://nubarchiva.org</email>
+                        </properties>
                         <licenseSets>
                             <licenseSet>
-                                <header>${main.basedir}/etc/license.txt</header>
+                                <header>com/mycila/maven/plugin/license/templates/APACHE-2.txt</header>
                                 <excludes>
-                                    <exclude>LICENSE.txt</exclude>
                                     <exclude>**/.dontdelete</exclude>
                                 </excludes>
                             </licenseSet>

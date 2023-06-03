@@ -47,7 +47,6 @@
         <module>nuba-bom</module>
     </modules>
 
-
     <profiles>
         <profile>
             <id>code-format</id>

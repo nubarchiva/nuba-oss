@@ -8,9 +8,13 @@
   </a>
 </p>
 
-[![Build](https://github.com/nubarchiva/nuba-oss/actions/workflows/maven.yml/badge.svg)](https://github.com/nubarchiva/nuba-oss/actions/workflows/maven.yml)
-[![ASL 2.0](https://img.shields.io/hexpm/l/plug.svg)](https://github.com/nubarchiva/nuba-oss/blob/develop/LICENSE)
-![Twitter Follow](https://img.shields.io/twitter/follow/nubarchiva?style=social)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/nubarchiva/nuba-oss/maven.yml?logo=github&style=for-the-badge)](https://github.com/nubarchiva/nuba-oss/actions/workflows/maven.yml)
+<a href="https://github.com/nubarchiva/nuba-oss/blob/develop/LICENSE">
+  <img alt="License" src="https://img.shields.io/badge/license-Apache%202-orange.svg?logo=apache&style=for-the-badge"/>
+</a>
+<a href="https://twitter.com/nubarchiva">
+  <img alt="Twitter" src="https://img.shields.io/badge/twitter-@nubarchiva-00b3f9?logo=twitter&style=for-the-badge">
+</a>
 
 ## What is nubarchiva?
 Free software for the preservation of collective memory and cultural heritage.

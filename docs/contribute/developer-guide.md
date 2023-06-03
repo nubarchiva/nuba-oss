@@ -1,4 +1,4 @@
-# Developer Guide
+# 🧑‍💻 Developer Guide
 
 This guide helps you get started developing nubarchiva.
 
@@ -38,7 +38,7 @@ mvn process-sources
 Run the following command to add license header info:
 
 ```
-mvn generate-sources -Pcode-format
+mvn -Pcode-format generate-sources
 ```
 ### Git workflow basic
 

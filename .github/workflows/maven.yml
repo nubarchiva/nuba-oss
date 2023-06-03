@@ -22,8 +22,14 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ${{matrix.os}}
 
+    strategy:
+      matrix:
+        java: [ '8', '11', '17' ]
+        os: [ 'ubuntu-latest', 'macos-latest', 'windows-latest' ]
+
+    name: Java ${{ matrix.Java }} (${{ matrix.os }})
     steps:
       - name: 'Check out repository'
         uses: actions/checkout@v2
@@ -33,7 +39,7 @@ jobs:
       - name: 'Set up Java'
         uses: actions/setup-java@v2
         with:
-          java-version: 11
+          java-version: ${{ matrix.java}}
           distribution: 'zulu'
 
       - name: 'Cache Maven packages'

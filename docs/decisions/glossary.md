@@ -23,6 +23,6 @@ accessed by different stakeholders.
 
 A requirement that has a measurable effect on a software system’s architecture and quality.
 
-
 ## Markdown Any Decision Records (MADR)
+
 MADR is a lean template to capture any decisions in a structured way.

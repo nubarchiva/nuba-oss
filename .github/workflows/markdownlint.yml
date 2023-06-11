@@ -1,0 +1,6 @@
+# https://github.com/marketplace/actions/markdownlint-cli
+- name: markdownlint-cli
+  uses: nosborn/github-action-markdown-cli@v3.3.0
+  with:
+    files: docs/**/*.md
+    config_file: docs/.markdownlint.yaml

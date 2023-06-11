@@ -21,7 +21,7 @@ Free software for the preservation of collective memory and cultural heritage.
 
 ## ✨Quick Start
 
-If you want to set up your local development environment, read our [🧑‍💻 Developer Guide](./docs/contribute/developer-guide.md)
+If you want to set up your local development environment, read our [🧑‍💻 Developer Guide](docs/contribute/developer-guide.md)
 
 Join [Twitter](https://twitter.com/nubarchiva) to keep in touch.
 
@@ -51,7 +51,7 @@ A significant number of institutions lack appropriate computer tools to manage t
 
 ### ⌨️️ Development environment
 
-Learn how to set up your local environment, go to our [Developer Guide](./docs/contribute/developer-guide.md).
+Learn how to set up your local environment, go to our [Developer Guide](docs/contribute/developer-guide.md).
 
 
 ## 🥰 License

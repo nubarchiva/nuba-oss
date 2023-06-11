@@ -4,7 +4,8 @@ This guide helps you get started developing nubarchiva.
 
 ## Dependencies
 
-Before you start contributing to nubarchiva, make sure you have the following tools and programming languages installed.
+Before you start contributing to nubarchiva, make sure you have the following tools and programming
+languages installed.
 
 Required tools:
 
@@ -14,32 +15,35 @@ Required programming languages:
 
 - Java 11
 - Maven 3.5.0+
- 
+
 ## How to run in your local environment
 
 Run the following command to build this project:
 
-```
+```bash
 mvn clean verify
 ```
 
-Pass the `-Dquick` option to skip all non-essential plug-ins and create the output artifact as quickly as possible:
+Pass the `-Dquick` option to skip all non-essential plug-ins and create the output artifact as
+quickly as possible:
 
-```
+```bash
 mvn clean verify -Dquick
 ```
 
-Run the following command to format the source code and organize the imports as per the project's conventions:
+Run the following command to format the source code and organize the imports as per the project's
+conventions:
 
-```
+```bash
 mvn process-sources
 ```
 
 Run the following command to add license header info:
 
-```
+```bash
 mvn -Pcode-format generate-sources
 ```
+
 ### Git workflow basic
 
 Here's a general nubarchiva git workflow:

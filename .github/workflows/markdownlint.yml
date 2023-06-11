@@ -1,0 +1,22 @@
+name: Markdown lint
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 'Check out repository'
+        uses: actions/checkout@v3
+
+      # https://github.com/marketplace/actions/markdownlint-cli
+      - name: 'Run markdownlint-cli tool'
+        uses: nosborn/github-action-markdown-cli@v3.3.0
+        with:
+          files: docs/**/*.md
+          config_file: docs/.markdownlint.yml

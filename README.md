@@ -27,7 +27,7 @@ Join [Twitter](https://twitter.com/nubarchiva) to keep in touch.
 
 ## 👫 Get Involved
 
-### 🌏 Why we create nubarchiva and open-source?
+### 🌏 Why do we create nubarchiva and open-source?
 nubarchiva is an open-source application that allows anyone or any institution, regardless of their size or resources,
 to have access to an archival management tool.
 
@@ -51,8 +51,11 @@ A significant number of institutions lack appropriate computer tools to manage t
 
 ### ⌨️️ Development environment
 
-Learn how to set up your local environment, go to our [Developer Guide](docs/contribute/developer-guide.md).
+To learn how to set up your local environment, go to our [Developer Guide](docs/contribute/developer-guide.md).
 
+### Documentation
+
+- [Decision records](./docs/decisions/index.md)
 
 ## 🥰 License
 

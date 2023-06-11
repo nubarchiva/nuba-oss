@@ -1,6 +1,6 @@
 ---
 status: accepted
-date: 2023-06-10
+date: 2023-06-02
 ---
 
 # Use Markdown Any Decision Records 3.0.0

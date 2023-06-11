@@ -15,7 +15,7 @@ Required programming languages:
 
 - Java 11
 - Maven 3.5.0+
- 
+
 ## How to run in your local environment
 
 Run the following command to build this project:

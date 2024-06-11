@@ -66,12 +66,13 @@ OpenJDK Runtime Environment (build 11.0.22+7-post-Ubuntu-0ubuntu222.04.1)
 OpenJDK 64-Bit Server VM (build 11.0.22+7-post-Ubuntu-0ubuntu222.04.1, mixed mode, sharing)
 ```
 
-Si se accede a [http://your-server:8080/](http://your-server:8080/) se muestra la página "It works!" de Tomcat
+Si se accede a [http://your-server:8080/](http://your-server:8080/) se muestra la página 
+"It works!" de Tomcat
 
 ## Instalación de Apache Solr 3.5
 
-Apache Solr 3.5 no está disponible en los repositorios oficiales de Ubuntu 22.04, por lo que es
-necesario descargarlo manualmente.
+Apache Solr 3.5 no está disponible en los repositorios oficiales de Ubuntu 22.04, por lo 
+que es necesario descargarlo manualmente.
 
 ```bash
 wget https://releases.nubarchiva.es/solr/3.5.0/nuba-apache-solr-3.5.0.tar.gz
@@ -126,8 +127,8 @@ sudo systemctl enable solr
 
 ## Configuración de la Base de Datos
 
-Ejecutar los scripts sql que crean la base de datos `nubarchiva`, el esquema `nuba00001`, las tablas
-y contenidos usados por la aplicación.
+Ejecutar los scripts sql que crean la base de datos `nubarchiva`, el esquema `nuba00001`, las 
+tablas y contenidos usados por la aplicación.
 
 ```bash
 cd nuba-sql
@@ -136,7 +137,8 @@ cat *.sql  | sudo su - postgres -c psql
 
 ## Configuración de Tomcat
 
-Para que Tomcat pueda conectarse a PostgreSQL, es necesario instalar el driver JDBC correspondiente.
+Para que Tomcat pueda conectarse a PostgreSQL, es necesario instalar el driver JDBC 
+correspondiente.
 
 ```sh
 sudo apt-get install tomcat9
@@ -228,4 +230,5 @@ sudo cp nuba-web-2.24.7.war /var/lib/tomcat9/webapps/nuba.war
 sudo chown tomcat:tomcat  /var/lib/tomcat9/webapps/nuba.war
 ```
 
-Si se accede a [http://your-server:8080/nuba](http://your-server:8080/nuba) se muestra la página de inicio de nubarchiva
+Si se accede a [http://your-server:8080/nuba](http://your-server:8080/nuba) se muestra la página 
+de inicio de nubarchiva

@@ -60,13 +60,13 @@ Verificación
 java -version
 ```
 
-```
+```text
 openjdk version "11.0.22" 2024-01-16
 OpenJDK Runtime Environment (build 11.0.22+7-post-Ubuntu-0ubuntu222.04.1)
 OpenJDK 64-Bit Server VM (build 11.0.22+7-post-Ubuntu-0ubuntu222.04.1, mixed mode, sharing)
 ```
 
-Si se accede a http://your-server:8080/ se muestra la página "It works!" de Tomcat
+Si se accede a [http://your-server:8080/](http://your-server:8080/) se muestra la página "It works!" de Tomcat
 
 ## Instalación de Apache Solr 3.5
 
@@ -228,4 +228,4 @@ sudo cp nuba-web-2.24.7.war /var/lib/tomcat9/webapps/nuba.war
 sudo chown tomcat:tomcat  /var/lib/tomcat9/webapps/nuba.war
 ```
 
-Si se accede a http://your-server:8080/nuba se muestra la página de inicio de nubarchiva
+Si se accede a [http://your-server:8080/nuba](http://your-server:8080/nuba) se muestra la página de inicio de nubarchiva

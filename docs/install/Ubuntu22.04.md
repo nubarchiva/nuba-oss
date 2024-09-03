@@ -132,7 +132,7 @@ tablas y contenidos usados por la aplicación.
 
 ```bash
 cd nuba-sql
-cat *.sql  | sudo su - postgres -c psql nubarchiva
+cat *.sql  | sudo su - postgres -c psql
 ```
 
 ## Configuración de Tomcat

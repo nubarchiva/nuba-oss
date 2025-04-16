@@ -75,7 +75,7 @@ Apache Solr 3.5 no está disponible en los repositorios oficiales de Ubuntu 22.0
 que es necesario descargarlo manualmente.
 
 ```bash
-wget https://releases.nubarchiva.es/solr/3.5.0/nuba-apache-solr-3.5.0.tar.gz
+wget http://releases.nubarchiva.org/nuba-2.24.7/nuba-apache-solr-3.5.0.tar.gz
 tar xzf nuba-apache-solr-3.5.0.tar.gz
 sudo mv apache-solr apache-solr-3.5.0 apache-solr-master /opt
 ```
@@ -201,7 +201,7 @@ JAVA_OPTS="${JAVA_OPTS} --add-opens=jdk.management/com.sun.management.internal=A
 ```
 
 ```shell
-sudo mkdir /lib/systemd/system/tomcat9.service.d
+sudo mkdir /etc/systemd/system/tomcat9.service.d
 echo -e "[Service]\nReadWritePaths=/var/log/nubarchiva/" | sudo tee /etc/systemd/system/tomcat9.service.d/logging-allow.conf
 sudo systemctl daemon-reload
 ```

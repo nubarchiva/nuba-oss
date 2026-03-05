@@ -26,7 +26,7 @@ jobs:
 
     strategy:
       matrix:
-        java: [ '8', '11', '17' ]
+        java: [ '11', '17', '21' ]
         os: [ 'ubuntu-latest' ]
 
     name: Java ${{ matrix.Java }} (${{ matrix.os }})
@@ -47,5 +47,5 @@ jobs:
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
 
-      - name: 'Build example service'
+      - name: 'Build'
         run: mvn -B clean verify

@@ -63,6 +63,7 @@ PostgreSQL 16.x ...
 ## Instalación de Java
 
 nubarchiva necesita dos versiones de Java:
+
 - **Java 8**: para Apache Solr 3.5
 - **Java 11**: para Apache Tomcat 9
 
@@ -197,9 +198,12 @@ cd ..
 ```
 
 > **⚠️ SEGURIDAD**: Los scripts SQL crean un usuario de base de datos y un usuario administrador
-> de la aplicación con **contraseñas por defecto**. Es **imprescindible** cambiar ambas contraseñas
+> de la aplicación con **contraseñas por defecto**.
+> Es **imprescindible** cambiar ambas contraseñas
 > antes de poner el sistema en producción.
-> Consulte la sección [Seguridad post-instalación](#seguridad-post-instalación) al final de este documento.
+> Consulte la sección
+> [Seguridad post-instalación](#seguridad-post-instalación)
+> al final de este documento.
 
 Ejecute el siguiente comando para crear la tabla `institution` y registrar su archivo:
 
@@ -455,15 +459,15 @@ sudo rm -rf /opt/tomcat9/webapps/manager
 Si encuentra documentación o guías que asumen una instalación de Tomcat 9 vía `apt-get`,
 utilice esta tabla para traducir las rutas:
 
-| Concepto        | Con apt-get (Ubuntu 22.04)                 | Manual (Ubuntu 24.04)                          |
-|-----------------|--------------------------------------------|------------------------------------------------|
-| Directorio base | `/var/lib/tomcat9/`                        | `/opt/tomcat9/`                                |
-| Configuración   | `/etc/tomcat9/`                            | `/opt/tomcat9/conf/`                           |
-| context.xml     | `/etc/tomcat9/context.xml`                 | `/opt/tomcat9/conf/context.xml`                |
-| JAVA_OPTS       | `/etc/default/tomcat9`                     | `/opt/tomcat9/bin/setenv.sh`                   |
-| Librerías       | `/var/lib/tomcat9/lib/`                    | `/opt/tomcat9/lib/`                            |
-| Webapps         | `/var/lib/tomcat9/webapps/`                | `/opt/tomcat9/webapps/`                        |
-| Servicio        | `systemctl restart tomcat9` (preexistente) | `systemctl restart tomcat9` (creado por usted) |
+| Concepto    | Con apt (22.04)             | Manual (24.04)                  |
+|-------------|-----------------------------|---------------------------------|
+| Dir. base   | `/var/lib/tomcat9/`         | `/opt/tomcat9/`                 |
+| Config.     | `/etc/tomcat9/`             | `/opt/tomcat9/conf/`            |
+| context.xml | `/etc/tomcat9/context.xml`  | `/opt/tomcat9/conf/context.xml` |
+| JAVA_OPTS   | `/etc/default/tomcat9`      | `/opt/tomcat9/bin/setenv.sh`    |
+| Librerías   | `/var/lib/tomcat9/lib/`     | `/opt/tomcat9/lib/`             |
+| Webapps     | `/var/lib/tomcat9/webapps/` | `/opt/tomcat9/webapps/`         |
+| Servicio    | `systemctl restart tomcat9` | `systemctl restart tomcat9`     |
 
 ## Solución de problemas
 
@@ -479,7 +483,8 @@ cat /opt/tomcat9/logs/catalina.out
 Java incorrecta. Verifique que `setenv.sh` apunta a Java 11.
 
 **Error `javax.naming.NameNotFoundException: Name [jdbc/NUBADS] is not bound`**: El `context.xml`
-no contiene la configuración del datasource. Revise el contenido de `/opt/tomcat9/conf/context.xml`.
+no contiene la configuración del datasource.
+Revise el contenido de `/opt/tomcat9/conf/context.xml`.
 
 ### nubarchiva no carga (error de conexión a base de datos)
 

@@ -361,6 +361,7 @@ ExecStart=/opt/tomcat9/bin/startup.sh
 ExecStop=/opt/tomcat9/bin/shutdown.sh
 
 ReadWritePaths=/var/log/nubarchiva/
+ReadWritePaths=/var/lib/nubarchiva/
 
 [Install]
 WantedBy=multi-user.target

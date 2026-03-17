@@ -202,9 +202,13 @@ JAVA_OPTS="${JAVA_OPTS} --add-opens=jdk.management/com.sun.management.internal=A
 
 ```shell
 sudo mkdir /etc/systemd/system/tomcat9.service.d
-echo -e "[Service]\nReadWritePaths=/var/log/nubarchiva/" | sudo tee /etc/systemd/system/tomcat9.service.d/logging-allow.conf
+echo -e "[Service]\nReadWritePaths=/var/log/nubarchiva/\nReadWritePaths=/var/lib/nubarchiva/" | sudo tee /etc/systemd/system/tomcat9.service.d/nubarchiva.conf
 sudo systemctl daemon-reload
 ```
+
+> **Nota**: Tomcat 9 en Ubuntu 22.04 incluye `ProtectSystem=strict` en su unit de systemd,
+> que monta el filesystem como solo lectura excepto las rutas explícitamente permitidas.
+> Sin este override, nubarchiva no podrá escribir logs ni almacenar adjuntos.
 
 Reinicie Tomcat para aplicar los cambios:
 
